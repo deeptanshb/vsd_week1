@@ -119,8 +119,8 @@ This repository documents my daily progress and also contains the **command flow
 ### 🔹 Step 1: RTL Simulation
 ```bash
 # Compile and simulate RTL
-iverilog <file>.v <tb_file>.v -o sim.out
-./sim.out
+iverilog <file>.v <tb_file>.v 
+./a.out
 
 # Open waveform
 gtkwave <tb_file>.vcd
@@ -159,10 +159,10 @@ write_verilog -noattr <file>_net.v
 iverilog \
   /home/deeptanshu/Desktop/vsd/sky130RTLDesignAndSynthesisWorkshop/my_lib/verilog_model/primitives.v \
   /home/deeptanshu/Desktop/vsd/sky130RTLDesignAndSynthesisWorkshop/my_lib/verilog_model/sky130_fd_sc_hd.v \
-  <file>_net.v <tb_file>.v -o netlist_sim.out
+  <file>_net.v <tb_file>.v 
 
 # Run netlist simulation
-./netlist_sim.out
+./a.out
 
 # Open waveform
 gtkwave <tb_file>.vcd &
